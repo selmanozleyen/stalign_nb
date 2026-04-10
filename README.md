@@ -17,13 +17,13 @@ python -m pip install --upgrade pip
 For a standard install with CPU JAX support, install Squidpy directly from the branch:
 
 ```bash
-python -m pip install "squidpy[jax] @ git+https://github.com/scverse/squidpy.git@feat/stalign-points"
+python -m pip install "squidpy[jax] @ git+https://github.com/selmanozleyen/squidpy.git@feat/stalign-points"
 ```
 
 If you prefer an editable install:
 
 ```bash
-git clone --branch feat/stalign-points https://github.com/scverse/squidpy.git
+git clone --branch feat/stalign-points https://github.com/selmanozleyen/squidpy.git
 cd squidpy
 python -m pip install -e ".[jax]"
 ```
@@ -34,13 +34,13 @@ If you have a supported NVIDIA GPU, install the CUDA-enabled JAX build first and
 
 ```bash
 python -m pip install -U "jax[cuda12]"
-python -m pip install --no-deps "squidpy @ git+https://github.com/scverse/squidpy.git@feat/stalign-points"
+python -m pip install --no-deps "squidpy @ git+https://github.com/selmanozleyen/squidpy.git@feat/stalign-points"
 ```
 
 For an editable GPU install:
 
 ```bash
-git clone --branch feat/stalign-points https://github.com/scverse/squidpy.git
+git clone --branch feat/stalign-points https://github.com/selmanozleyen/squidpy.git
 cd squidpy
 python -m pip install -U "jax[cuda12]"
 python -m pip install -e . --no-deps
